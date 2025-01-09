@@ -9,7 +9,7 @@ const DATABASE_URL =
 process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
 module.exports = {
   VERSION: require('./package.json').version,
-  SESSION_ID: (process.env.SESSION_ID || '').trim(),
+  SESSION_ID: (process.env.SESSION_ID || 'levanter_10ddaadaa6b28c4b478187de47e6e6c722').trim(),
   DATABASE:
     DATABASE_URL === databasePath
       ? new Sequelize({
@@ -32,7 +32,7 @@ module.exports = {
   HEROKU_APP_NAME: process.env.HEROKU_APP_NAME,
   HEROKU_API_KEY: process.env.HEROKU_API_KEY,
   BRANCH: 'master',
-  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,LyFE',
+  STICKER_PACKNAME: process.env.STICKER_PACKNAME || '❤️,Harmony',
   ALWAYS_ONLINE: process.env.ALWAYS_ONLINE,
   LOG_MSG: process.env.LOG_MSG || 'false',
   RMBG_KEY: process.env.RMBG_KEY || 'null',
@@ -74,7 +74,7 @@ module.exports = {
   DELETE_TYPE: (process.env.DELETE_TYPE || '').trim(),
   LIST_TYPE: (process.env.LIST_TYPE || 'text').trim(),
   BING_COOKIE: (process.env.BING_COOKIE || '').trim(),
-  GEMINI_API_KEY: (process.env.GEMINI_API_KEY || '').trim(),
+  GEMINI_API_KEY: (process.env.GEMINI_API_KEY || 'AIzaSyDf7HmDK1PjGU4tA5IODZte2G7b4bnNoB8').trim(),
   GROUP_ADMINS: process.env.GROUP_ADMINS || '',
   RENDER_NAME: (process.env.RENDER_NAME || '').trim(),
   RENDER_API_KEY: (process.env.RENDER_API_KEY || '').trim(),
